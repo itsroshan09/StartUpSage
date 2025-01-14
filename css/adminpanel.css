@@ -1,0 +1,104 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(90px);
+    z-index: 1;
+}
+
+.admin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.text {
+    margin-left: 320px;
+    margin-top: -650px;
+    text-align: center;
+}
+
+/* Styles for the sidebar */
+.sidebar-container {
+    width: 20%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.68);
+    overflow-y: auto;
+}
+
+/* Styles for the main content */
+.admin-content {
+    flex: 1; /* Take remaining space */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.268); /* Adjust transparency as needed */
+    margin-left: 40%; /* Add margin to the left equal to sidebar width */
+}
+
+
+.content {
+    flex: 1; /* Take up remaining space */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    text-align: center;
+}
+
+.admin-panel {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.268); /* Adjust the alpha channel for transparency */
+    border-radius: 10px;
+    text-align: center;
+    z-index: 3; /* Ensure the admin panel is on top of other content */
+}   
+
+h1 {
+    color: red;
+    align-items: center;
+}
+
+.admin-button {
+    padding: 10px 20px; /* Adjust padding or remove it to use width and height for size */
+    width: 180px; /* Specify width */
+    height: 45px; /* Specify height */
+    margin: 10px; /* Keep some space between buttons */
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex; /* Use flexbox for centering text */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    text-align: center; /* Ensure text is centered */
+}
+
+.admin-button:hover {
+    background-color: #45a049;
+}
